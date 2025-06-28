@@ -59,7 +59,8 @@ module button_press_count_top
       if (done && tap_count == 'd7) led_7 <= ~led_7;
       if (done && tap_count == 'd8) led_8 <= ~led_8;
     end
-  
+
+  // This was generated 100% by Copilot (ChatGPT), no changes
   tap_counter_debounced #(.TIMEOUT_CYCLES(12_000_000), .DEBOUNCE_CYCLES(12_000), .COUNT_WIDTH(8))
   u_tap_counter_debounced
   ( .clk        (clk_12mhz), // input
